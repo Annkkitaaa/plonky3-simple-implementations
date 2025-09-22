@@ -102,7 +102,7 @@ fn create_config() -> MyConfig {
 }
 
 fn main() {
-    println!("🧮 Plonky3 Arithmetic Proof System");
+    println!(" Plonky3 Arithmetic Proof System");
     println!("   Proving: a + c * d = e");
     println!("   Values: 3 + 4 * 5 = 23");
     println!();
@@ -111,7 +111,7 @@ fn main() {
     let trace = generate_arithmetic_trace::<Val>();
     let config = create_config();
     
-    println!("✅ Generated execution trace:");
+    println!(" Generated execution trace:");
     println!("   Single row: [a=3, c=4, d=5, e=23]");
     println!("   Constraint: a + c * d - e = 0");
     println!("   Check: 3 + 4 * 5 - 23 = 0 ✓");
