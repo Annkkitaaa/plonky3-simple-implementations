@@ -1,6 +1,18 @@
 [package]
-name = "plonky3"
+name = "simple_arithmetic_proof"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+p3-air = { git = "https://github.com/Plonky3/Plonky3" }
+p3-baby-bear = { git = "https://github.com/Plonky3/Plonky3" }
+p3-challenger = { git = "https://github.com/Plonky3/Plonky3" }
+p3-commit = { git = "https://github.com/Plonky3/Plonky3" }
+p3-dft = { git = "https://github.com/Plonky3/Plonky3" }
+p3-field = { git = "https://github.com/Plonky3/Plonky3" }
+p3-fri = { git = "https://github.com/Plonky3/Plonky3" }
+p3-matrix = { git = "https://github.com/Plonky3/Plonky3" }
+p3-merkle-tree = { git = "https://github.com/Plonky3/Plonky3" }
+p3-symmetric = { git = "https://github.com/Plonky3/Plonky3" }
+p3-uni-stark = { git = "https://github.com/Plonky3/Plonky3" }
+rand = "0.8"
