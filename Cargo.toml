@@ -15,4 +15,4 @@ p3-matrix = { git = "https://github.com/Plonky3/Plonky3" }
 p3-merkle-tree = { git = "https://github.com/Plonky3/Plonky3" }
 p3-symmetric = { git = "https://github.com/Plonky3/Plonky3" }
 p3-uni-stark = { git = "https://github.com/Plonky3/Plonky3" }
-rand = "0.8"
+rand = { version = "0.9", features = ["small_rng"] }

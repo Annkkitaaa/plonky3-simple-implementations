@@ -58,18 +58,21 @@ impl<F> Borrow<ArithmeticRow<F>> for [F] {
 }
 
 pub fn generate_arithmetic_trace<F: PrimeField64>() -> RowMajorMatrix<F> {
-    let n = 1;
+    let n = 256; // Increased to 256 rows to meet minimum FRI requirements
     let mut trace = RowMajorMatrix::new(F::zero_vec(n * NUM_ARITHMETIC_COLS), NUM_ARITHMETIC_COLS);
-    
+
     let (prefix, rows, suffix) = unsafe { trace.values.align_to_mut::<ArithmeticRow<F>>() };
     assert!(prefix.is_empty(), "Alignment should match");
     assert!(suffix.is_empty(), "Alignment should match");
     assert_eq!(rows.len(), n);
-    
-    rows[0] = ArithmeticRow::new(
-        F::from_u64(3), F::from_u64(4), F::from_u64(5), F::from_u64(23)
-    );
-    
+
+    // Fill all rows with the same arithmetic constraint: a + c * d = e
+    for i in 0..n {
+        rows[i] = ArithmeticRow::new(
+            F::from_u64(3), F::from_u64(4), F::from_u64(5), F::from_u64(23)
+        );
+    }
+
     trace
 }
 
@@ -118,11 +121,8 @@ impl rand::RngCore for SimpleRng {
         }
     }
 
-    fn try_fill_bytes(&mut self, dest: &mut [u8]) -> Result<(), rand::Error> {
-        self.fill_bytes(dest);
-        Ok(())
-    }
 }
+
 
 fn create_config() -> MyConfig {
     let mut rng = SimpleRng::new(42);
@@ -132,7 +132,7 @@ fn create_config() -> MyConfig {
     let val_mmcs = ValMmcs::new(hash, compress);
     let challenge_mmcs = ChallengeMmcs::new(val_mmcs.clone());
     let dft = Dft::default();
-    let fri_params = create_test_fri_params(challenge_mmcs, 1);
+    let fri_params = create_test_fri_params(challenge_mmcs, 4);
     let pcs = Pcs::new(dft, val_mmcs, fri_params);
     let challenger = Challenger::new(perm);
     MyConfig::new(pcs, challenger)
@@ -149,7 +149,7 @@ fn main() {
     let config = create_config();
     
     println!("✅ Generated execution trace:");
-    println!("   Single row: [a=3, c=4, d=5, e=23]");
+    println!("   256 rows: [a=3, c=4, d=5, e=23] (repeated)");
     println!("   Constraint: a + c * d - e = 0");
     println!("   Check: 3 + 4 * 5 - 23 = 0 ✅");
     println!();
