@@ -12,8 +12,6 @@ use p3_matrix::dense::RowMajorMatrix;
 use p3_merkle_tree::MerkleTreeMmcs;
 use p3_symmetric::{PaddingFreeSponge, TruncatedPermutation};
 use p3_uni_stark::{StarkConfig, prove, verify};
-use rand::SeedableRng;
-use rand::rngs::SmallRng;
 
 const NUM_ARITHMETIC_COLS: usize = 4;
 
@@ -87,12 +85,48 @@ type Dft = Radix2DitParallel<Val>;
 type Pcs = TwoAdicFriPcs<Val, Dft, ValMmcs, ChallengeMmcs>;
 type MyConfig = StarkConfig<Pcs, Challenge, Challenger>;
 
+struct SimpleRng {
+    state: u64,
+}
+
+impl SimpleRng {
+    fn new(seed: u64) -> Self {
+        Self { state: seed }
+    }
+}
+
+impl rand::RngCore for SimpleRng {
+    fn next_u32(&mut self) -> u32 {
+        self.state = self.state.wrapping_mul(1103515245).wrapping_add(12345);
+        (self.state >> 32) as u32
+    }
+
+    fn next_u64(&mut self) -> u64 {
+        let high = self.next_u32() as u64;
+        let low = self.next_u32() as u64;
+        (high << 32) | low
+    }
+
+    fn fill_bytes(&mut self, dest: &mut [u8]) {
+        for chunk in dest.chunks_mut(4) {
+            let val = self.next_u32().to_le_bytes();
+            for (i, &byte) in val.iter().enumerate() {
+                if i < chunk.len() {
+                    chunk[i] = byte;
+                }
+            }
+        }
+    }
+
+    fn try_fill_bytes(&mut self, dest: &mut [u8]) -> Result<(), rand::Error> {
+        self.fill_bytes(dest);
+        Ok(())
+    }
+}
+
 fn create_config() -> MyConfig {
-    // Use a fixed seed to avoid rand version conflicts
-    let mut rng_state = [0u8; 32];
-    rng_state[0] = 42; // Simple deterministic seed
-    
-    let perm = Perm::new_from_rng_128(&mut DeterministicRng::new(rng_state));
+    let mut rng = SimpleRng::new(42);
+    let perm = Perm::new_from_rng_128(&mut rng);
     let hash = MyHash::new(perm.clone());
     let compress = MyCompress::new(perm.clone());
     let val_mmcs = ValMmcs::new(hash, compress);
@@ -102,48 +136,6 @@ fn create_config() -> MyConfig {
     let pcs = Pcs::new(dft, val_mmcs, fri_params);
     let challenger = Challenger::new(perm);
     MyConfig::new(pcs, challenger)
-}
-
-// Simple deterministic RNG to avoid version conflicts
-struct DeterministicRng {
-    state: [u8; 32],
-    index: usize,
-}
-
-impl DeterministicRng {
-    fn new(seed: [u8; 32]) -> Self {
-        Self { state: seed, index: 0 }
-    }
-}
-
-// Implement minimal RNG interface needed for Poseidon2
-impl rand::RngCore for DeterministicRng {
-    fn next_u32(&mut self) -> u32 {
-        let result = u32::from_le_bytes([
-            self.state[self.index % 32],
-            self.state[(self.index + 1) % 32], 
-            self.state[(self.index + 2) % 32],
-            self.state[(self.index + 3) % 32],
-        ]);
-        self.index = (self.index + 4) % 32;
-        result
-    }
-
-    fn next_u64(&mut self) -> u64 {
-        ((self.next_u32() as u64) << 32) | (self.next_u32() as u64)
-    }
-
-    fn fill_bytes(&mut self, dest: &mut [u8]) {
-        for byte in dest {
-            *byte = self.state[self.index % 32];
-            self.index = (self.index + 1) % 32;
-        }
-    }
-
-    fn try_fill_bytes(&mut self, dest: &mut [u8]) -> Result<(), rand::Error> {
-        self.fill_bytes(dest);
-        Ok(())
-    }
 }
 
 fn main() {
@@ -159,7 +151,7 @@ fn main() {
     println!("✅ Generated execution trace:");
     println!("   Single row: [a=3, c=4, d=5, e=23]");
     println!("   Constraint: a + c * d - e = 0");
-    println!("   Check: 3 + 4 * 5 - 23 = 0 ✓");
+    println!("   Check: 3 + 4 * 5 - 23 = 0 ✅");
     println!();
     
     println!("🔄 Generating STARK proof...");
@@ -179,10 +171,9 @@ fn main() {
         }
     }
     
-    println!("🎉 Proof verified successfully!");
     println!();
     println!("✨ Summary:");
     println!("   - Created STARK proof for: a + c*d = e");
     println!("   - Values: 3 + 4*5 = 23");
-    println!("   - Proof verification completed ✓");
+    println!("   - Proof verification completed ✅");
 }
