@@ -102,7 +102,7 @@ fn create_config() -> MyConfig {
 }
 
 fn main() {
-    println!(" Plonky3 Arithmetic Proof System");
+    println!("🧮 Plonky3 Arithmetic Proof System");
     println!("   Proving: a + c * d = e");
     println!("   Values: 3 + 4 * 5 = 23");
     println!();
@@ -111,26 +111,32 @@ fn main() {
     let trace = generate_arithmetic_trace::<Val>();
     let config = create_config();
     
-    println!(" Generated execution trace:");
+    println!("✅ Generated execution trace:");
     println!("   Single row: [a=3, c=4, d=5, e=23]");
     println!("   Constraint: a + c * d - e = 0");
     println!("   Check: 3 + 4 * 5 - 23 = 0 ✓");
     println!();
     
-    println!(" Generating STARK proof...");
-    let proof = prove(&config, &air, trace, &vec![])
-        .expect("Failed to generate proof");
+    println!("🔄 Generating STARK proof...");
+    let proof = prove(&config, &air, trace, &vec![]);
     
-    println!(" Proof generated successfully!");
+    println!("✅ Proof generated successfully!");
     println!();
     
-    println!(" Verifying proof...");
-    verify(&config, &air, &proof, &vec![])
-        .expect("Proof verification failed");
+    println!("🔍 Verifying proof...");
+    let verify_result = verify(&config, &air, &proof, &vec![]);
     
-    println!(" Proof verified successfully!");
+    match verify_result {
+        Ok(()) => println!("🎉 Proof verified successfully!"),
+        Err(e) => {
+            println!("❌ Verification failed: {:?}", e);
+            return;
+        }
+    }
+    
+    println!("🎉 Proof verified successfully!");
     println!();
-    println!(" Summary:");
+    println!("✨ Summary:");
     println!("   - Created STARK proof for: a + c*d = e");
     println!("   - Values: 3 + 4*5 = 23");
     println!("   - Proof verification completed ✓");
