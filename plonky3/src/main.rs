@@ -117,20 +117,20 @@ fn main() {
     println!("   Check: 3 + 4 * 5 - 23 = 0 ✓");
     println!();
     
-    println!("🔄 Generating STARK proof...");
+    println!(" Generating STARK proof...");
     let proof = prove(&config, &air, trace, &vec![])
         .expect("Failed to generate proof");
     
-    println!("✅ Proof generated successfully!");
+    println!(" Proof generated successfully!");
     println!();
     
-    println!("🔍 Verifying proof...");
+    println!(" Verifying proof...");
     verify(&config, &air, &proof, &vec![])
         .expect("Proof verification failed");
     
-    println!("🎉 Proof verified successfully!");
+    println!(" Proof verified successfully!");
     println!();
-    println!("✨ Summary:");
+    println!(" Summary:");
     println!("   - Created STARK proof for: a + c*d = e");
     println!("   - Values: 3 + 4*5 = 23");
     println!("   - Proof verification completed ✓");
