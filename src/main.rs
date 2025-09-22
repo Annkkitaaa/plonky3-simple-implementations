@@ -120,8 +120,9 @@ impl rand::RngCore for SimpleRng {
             }
         }
     }
-
 }
+
+impl rand::CryptoRng for SimpleRng {}
 
 
 fn create_config() -> MyConfig {
