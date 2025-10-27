@@ -298,7 +298,7 @@ plonky3-examples/
 
 ---
 
-## 📚 Additional Resources
+##  Additional Resources
 
 ### Official Documentation
 
@@ -319,7 +319,7 @@ plonky3-examples/
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! If you'd like to add more examples or improve existing ones:
 
@@ -339,7 +339,7 @@ Contributions are welcome! If you'd like to add more examples or improve existin
 
 ---
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
