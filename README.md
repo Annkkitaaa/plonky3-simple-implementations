@@ -35,7 +35,7 @@ Before diving into the code, we recommend reading our comprehensive guides:
 
 ---
 
-## 🧮 Example 1: Simple Arithmetic Circuit
+##  Example 1: Simple Arithmetic Circuit
 
 **Proves:** `a + c * d = e`
 
