@@ -67,16 +67,16 @@ RUSTFLAGS="-Ctarget-cpu=native" cargo run --release
    Proving: a + c * d = e
    Values: 3 + 4 * 5 = 23
 
-✅ Generated execution trace:
+ Generated execution trace:
    256 rows: [a=3, c=4, d=5, e=23] (repeated)
    Constraint: a + c * d - e = 0
-   Check: 3 + 4 * 5 - 23 = 0 ✅
+   Check: 3 + 4 * 5 - 23 = 0 
 
-🔄 Generating STARK proof...
-✅ Proof generated successfully!
+ Generating STARK proof...
+ Proof generated successfully!
 
-🔍 Verifying proof...
-🎉 Proof verified successfully!
+ Verifying proof...
+ Proof verified successfully!
 ```
 
 ### Code Structure
