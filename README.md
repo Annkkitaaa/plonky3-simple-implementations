@@ -345,7 +345,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Polygon Labs** for developing Plonky3
 - **Plonky3 contributors** for the excellent toolkit
@@ -353,7 +353,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📧 Contact & Support
+##  Contact & Support
 
 - **Issues**: [GitHub Issues](https://github.com/yourusername/plonky3-examples/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/yourusername/plonky3-examples/discussions)
@@ -361,7 +361,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [x] Simple arithmetic circuit example
 - [x] Fibonacci sequence with state transitions
