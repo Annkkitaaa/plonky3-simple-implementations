@@ -169,11 +169,11 @@ plonky3-fibonacci-guide-Understanding-state-transitions/
 └── README.md
 ```
 
-**[📖 Full Documentation](https://www.notion.so/your-fibonacci-guide-link)**
+**[ Full Documentation](https://www.notion.so/your-fibonacci-guide-link)**
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -216,7 +216,7 @@ RUSTFLAGS="-Ctarget-cpu=native" cargo run --release
 
 ---
 
-## 📖 Understanding Plonky3
+##  Understanding Plonky3
 
 ### What is Plonky3?
 
@@ -256,7 +256,7 @@ builder.assert_zero(next.b - local.a - local.b);
 
 ---
 
-## 🔧 Project Structure
+##  Project Structure
 
 ```
 plonky3-examples/
@@ -278,7 +278,7 @@ plonky3-examples/
 
 ---
 
-## 🎓 What You'll Learn
+##  What You'll Learn
 
 ### From the Arithmetic Example
 
