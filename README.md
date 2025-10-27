@@ -18,7 +18,7 @@ This repository provides hands-on examples that demonstrate how to build STARK p
 
 ---
 
-## 📚 Learning Path
+##  Learning Path
 
 ### Start Here: Understanding Plonky3
 
