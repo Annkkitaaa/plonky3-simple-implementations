@@ -63,7 +63,7 @@ RUSTFLAGS="-Ctarget-cpu=native" cargo run --release
 ### Expected Output
 
 ```
-🧮 Plonky3 Arithmetic Proof System
+ Plonky3 Arithmetic Proof System
    Proving: a + c * d = e
    Values: 3 + 4 * 5 = 23
 
