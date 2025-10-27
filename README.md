@@ -89,11 +89,11 @@ plonky3-simple-circuit-implementation/
 └── README.md
 ```
 
-**[📖 Full Documentation](https://www.notion.so/your-arithmetic-guide-link)**
+**[ Full Documentation](https://www.notion.so/your-arithmetic-guide-link)**
 
 ---
 
-## 🔢 Example 2: Fibonacci Sequence
+##  Example 2: Fibonacci Sequence
 
 **Proves:** `F(n) = F(n-1) + F(n-2)`
 
@@ -133,11 +133,11 @@ RUSTFLAGS="-Ctarget-cpu=native" cargo run --release
 ### Expected Output
 
 ```
-🔢 Plonky3 Fibonacci Proof System
+ Plonky3 Fibonacci Proof System
    Proving: F(n) = F(n-1) + F(n-2)
    Computing: F(0)=0, F(1)=1, F(2)=1, F(3)=2, F(4)=3, F(5)=5...
 
-✅ Generated execution trace:
+ Generated execution trace:
    Computing 100 Fibonacci numbers
    Trace padded to 128 rows (power of 2)
 
@@ -152,11 +152,11 @@ RUSTFLAGS="-Ctarget-cpu=native" cargo run --release
    1. Transition: next.b = local.a + local.b (Fibonacci rule)
    2. Propagation: next.a = local.b (state shift)
 
-🔄 Generating STARK proof...
-✅ Proof generated successfully!
+ Generating STARK proof...
+ Proof generated successfully!
 
-🔍 Verifying proof...
-🎉 Proof verified successfully!
+ Verifying proof...
+ Proof verified successfully!
 ```
 
 ### Code Structure
