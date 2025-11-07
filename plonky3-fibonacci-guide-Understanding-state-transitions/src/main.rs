@@ -30,11 +30,11 @@ impl<AB: AirBuilder> Air<AB> for FibonacciAir {
         let main = builder.main();
 
         // Get current row and next row
-        let local = main.row_slice(0);
-        let next = main.row_slice(1);
+        let local_slice = main.row_slice(0).unwrap();
+        let next_slice = main.row_slice(1).unwrap();
 
-        let local: &FibonacciRow<AB::Var> = (*local).borrow();
-        let next: &FibonacciRow<AB::Var> = (*next).borrow();
+        let local: &FibonacciRow<AB::Var> = (*local_slice).borrow();
+        let next: &FibonacciRow<AB::Var> = (*next_slice).borrow();
 
         // Constraint 1: Fibonacci recurrence relation
         // next.b should equal local.a + local.b
@@ -77,7 +77,7 @@ impl<F> Borrow<FibonacciRow<F>> for [F] {
     }
 }
 
-pub fn generate_fibonacci_trace<F: PrimeField64>(num_steps: usize) -> RowMajorMatrix<F> {
+pub fn generate_fibonacci_trace<F: Field + PrimeField64>(num_steps: usize) -> RowMajorMatrix<F> {
     // Ensure power of 2 for FFT operations
     let n = num_steps.next_power_of_two().max(256);
 
@@ -94,7 +94,7 @@ pub fn generate_fibonacci_trace<F: PrimeField64>(num_steps: usize) -> RowMajorMa
     assert_eq!(rows.len(), n);
 
     // Initialize: F(0) = 0, F(1) = 1
-    rows[0] = FibonacciRow::new(F::zero(), F::one());
+    rows[0] = FibonacciRow::new(F::ZERO, F::ONE);
 
     // Generate Fibonacci sequence: F(n) = F(n-1) + F(n-2)
     for i in 1..num_steps {
@@ -208,7 +208,7 @@ fn main() {
     for i in [0, 1, 2, 3, 4, 5, 10, 20, 50, 99].iter() {
         if *i < num_steps {
             let idx = i * NUM_FIBONACCI_COLS;
-            let a = trace_data[idx];
+            let _a = trace_data[idx];
             let b = trace_data[idx + 1];
             println!("   F({}) = {}", i, b);
         }
