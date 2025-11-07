@@ -86,7 +86,6 @@ plonky3-simple-circuit-implementation/
 └── README.md
 ```
 
-**[ Full Documentation](https://www.notion.so/your-arithmetic-guide-link)**
 
 ---
 
@@ -166,7 +165,6 @@ plonky3-fibonacci-guide-Understanding-state-transitions/
 └── README.md
 ```
 
-**[ Full Documentation](https://www.notion.so/your-fibonacci-guide-link)**
 
 ---
 
@@ -303,11 +301,6 @@ plonky3-examples/
 - [Polygon Knowledge Layer - Plonky3 Docs](https://docs.polygon.technology/)
 - [Plonky3 Production Announcement](https://polygon.technology/blog/polygon-plonky3-is-production-ready)
 
-### Our Guides
-
-- [Complete Plonky3 Beginner's Guide](https://www.notion.so/your-link) - Comprehensive introduction
-- [AIR vs CircuitBuilder Comparison](https://www.notion.so/your-link) - Architectural deep dive
-- [Fibonacci State Transitions Guide](https://www.notion.so/your-link) - Advanced patterns
 
 ### Community
 
