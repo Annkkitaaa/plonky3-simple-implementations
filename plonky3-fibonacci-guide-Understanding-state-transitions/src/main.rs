@@ -185,3 +185,63 @@ fn create_config() -> MyConfig {
     MyConfig::new(pcs, challenger)
 }
 
+fn main() {
+    println!(" Plonky3 Fibonacci Proof System");
+    println!("   Proving: F(n) = F(n-1) + F(n-2)");
+    println!("   Computing: F(0)=0, F(1)=1, F(2)=1, F(3)=2, F(4)=3, F(5)=5...");
+    println!();
+
+    // Generate Fibonacci sequence up to F(100)
+    let num_steps = 100;
+    let air = FibonacciAir;
+    let trace = generate_fibonacci_trace::<Val>(num_steps);
+    let config = create_config();
+
+    // Display some values from the trace
+    println!(" Generated execution trace:");
+    println!("   Computing {} Fibonacci numbers", num_steps);
+    println!("   Trace padded to {} rows (power of 2)", trace.height());
+
+    // Calculate and display some Fibonacci values
+    let trace_data = &trace.values;
+    println!("\n   Sample values:");
+    for i in [0, 1, 2, 3, 4, 5, 10, 20, 50, 99].iter() {
+        if *i < num_steps {
+            let idx = i * NUM_FIBONACCI_COLS;
+            let a = trace_data[idx];
+            let b = trace_data[idx + 1];
+            println!("   F({}) = {}", i, b);
+        }
+    }
+    println!();
+
+    println!("   Constraints:");
+    println!("   1. Transition: next.b = local.a + local.b (Fibonacci rule)");
+    println!("   2. Propagation: next.a = local.b (state shift)");
+    println!();
+
+    println!(" Generating STARK proof...");
+    let proof = prove(&config, &air, trace, &vec![]);
+
+    println!(" Proof generated successfully!");
+    println!();
+
+    println!(" Verifying proof...");
+    let verify_result = verify(&config, &air, &proof, &vec![]);
+
+    match verify_result {
+        Ok(()) => {
+            println!(" Proof verified successfully!");
+            println!();
+            println!(" What was proven:");
+            println!("   - The prover knows a valid Fibonacci sequence");
+            println!("   - Every step satisfies F(n) = F(n-1) + F(n-2)");
+            println!("   - The sequence starts with F(0)=0, F(1)=1");
+            println!("   - All {} steps are correctly computed", num_steps);
+        },
+        Err(e) => {
+            println!(" Verification failed: {:?}", e);
+            return;
+        }
+    }
+}
