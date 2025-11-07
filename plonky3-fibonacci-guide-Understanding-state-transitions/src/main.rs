@@ -77,3 +77,40 @@ impl<F> Borrow<FibonacciRow<F>> for [F] {
     }
 }
 
+pub fn generate_fibonacci_trace<F: PrimeField64>(num_steps: usize) -> RowMajorMatrix<F> {
+    // Ensure power of 2 for FFT operations
+    let n = num_steps.next_power_of_two().max(256);
+
+    let mut trace = RowMajorMatrix::new(
+        F::zero_vec(n * NUM_FIBONACCI_COLS),
+        NUM_FIBONACCI_COLS
+    );
+
+    let (prefix, rows, suffix) = unsafe {
+        trace.values.align_to_mut::<FibonacciRow<F>>()
+    };
+    assert!(prefix.is_empty(), "Alignment should match");
+    assert!(suffix.is_empty(), "Alignment should match");
+    assert_eq!(rows.len(), n);
+
+    // Initialize: F(0) = 0, F(1) = 1
+    rows[0] = FibonacciRow::new(F::zero(), F::one());
+
+    // Generate Fibonacci sequence: F(n) = F(n-1) + F(n-2)
+    for i in 1..num_steps {
+        let prev_a = rows[i - 1].a;
+        let prev_b = rows[i - 1].b;
+
+        rows[i] = FibonacciRow::new(
+            prev_b,           // a = previous b (shift forward)
+            prev_a + prev_b   // b = F(n) = F(n-1) + F(n-2)
+        );
+    }
+
+    // Pad remaining rows with final values to meet power-of-2 requirement
+    for i in num_steps..n {
+        rows[i] = rows[num_steps - 1].clone();
+    }
+
+    trace
+}
