@@ -1,0 +1,1019 @@
+   0.111385900s  INFO prepare_target{force=false package_id=simple_arithmetic_proof v0.1.0 (D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation) target="simple_arithmetic_proof"}: cargo::core::compiler::fingerprint: stale: missing "D:\\projects\\plonky3-simple-circuit-implementation\\plonky3-simple-circuit-implementation\\target\\debug\\.fingerprint\\tracing-839f8fc134e0126e\\dep-lib-tracing"
+   0.112452300s  INFO prepare_target{force=false package_id=simple_arithmetic_proof v0.1.0 (D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation) target="simple_arithmetic_proof"}: cargo::core::compiler::fingerprint: fingerprint error for simple_arithmetic_proof v0.1.0 (D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation)/Check { test: false }/TargetInner { name: "simple_arithmetic_proof", doc: true, ..: with_path("D:\\projects\\plonky3-simple-circuit-implementation\\plonky3-simple-circuit-implementation\\src\\main.rs", Edition2021) }
+   0.112540500s  INFO prepare_target{force=false package_id=simple_arithmetic_proof v0.1.0 (D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation) target="simple_arithmetic_proof"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\simple_arithmetic_proof-0b0b21dc1e67ddeb\bin-simple_arithmetic_proof`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.127459800s  INFO prepare_target{force=false package_id=p3-air v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_air"}: cargo::core::compiler::fingerprint: fingerprint error for p3-air v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_air", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\air\\src\\lib.rs", Edition2024) }
+   0.127500200s  INFO prepare_target{force=false package_id=p3-air v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_air"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-air-52b2e5bb60e25705\lib-p3_air`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.127864600s  INFO prepare_target{force=false package_id=p3-field v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_field"}: cargo::core::compiler::fingerprint: fingerprint error for p3-field v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_field", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\field\\src\\lib.rs", Edition2024) }
+   0.127886000s  INFO prepare_target{force=false package_id=p3-field v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_field"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-field-a631a15c3b10ed88\lib-p3_field`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.128282800s  INFO prepare_target{force=false package_id=itertools v0.14.0 target="itertools"}: cargo::core::compiler::fingerprint: fingerprint error for itertools v0.14.0/Check { test: false }/TargetInner { tested: false, benched: false, ..: lib_target("itertools", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\itertools-0.14.0\\src\\lib.rs", Edition2018) }
+   0.128303600s  INFO prepare_target{force=false package_id=itertools v0.14.0 target="itertools"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\itertools-2d556b96a301e954\lib-itertools`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.128784900s  INFO prepare_target{force=false package_id=num-bigint v0.4.6 target="num_bigint"}: cargo::core::compiler::fingerprint: fingerprint error for num-bigint v0.4.6/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("num_bigint", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\num-bigint-0.4.6\\src\\lib.rs", Edition2021) }
+   0.128806100s  INFO prepare_target{force=false package_id=num-bigint v0.4.6 target="num_bigint"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\num-bigint-e6d6d71643e8d159\lib-num_bigint`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.129195500s  INFO prepare_target{force=false package_id=num-integer v0.1.46 target="num_integer"}: cargo::core::compiler::fingerprint: fingerprint error for num-integer v0.1.46/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("num_integer", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\num-integer-0.1.46\\src\\lib.rs", Edition2018) }
+   0.129215200s  INFO prepare_target{force=false package_id=num-integer v0.1.46 target="num_integer"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\num-integer-a9aa64ad90a449c8\lib-num_integer`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.131266800s  INFO prepare_target{force=false package_id=p3-util v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_util"}: cargo::core::compiler::fingerprint: fingerprint error for p3-util v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_util", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\util\\src\\lib.rs", Edition2024) }
+   0.131314300s  INFO prepare_target{force=false package_id=p3-util v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_util"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-util-546569c39ec189c7\lib-p3_util`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.131879300s  INFO prepare_target{force=false package_id=serde v1.0.226 target="serde"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.226/Check { test: false }/TargetInner { ..: lib_target("serde", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde-1.0.226\\src\\lib.rs", Edition2021) }
+   0.131922700s  INFO prepare_target{force=false package_id=serde v1.0.226 target="serde"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\serde-3375b5540fb46978\lib-serde`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.133764200s  INFO prepare_target{force=false package_id=serde_core v1.0.226 target="serde_core"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.226/Check { test: false }/TargetInner { ..: lib_target("serde_core", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_core-1.0.226\\src\\lib.rs", Edition2021) }
+   0.133815900s  INFO prepare_target{force=false package_id=serde_core v1.0.226 target="serde_core"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\serde_core-42549af61e92fc07\lib-serde_core`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_libgit2_prerelease
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: git_midx_writer_dump
+  22: git_filter_source_repo
+  23: git_midx_writer_dump
+  24: BaseThreadInitThunk
+  25: RtlUserThreadStart
+   0.138336800s  INFO prepare_target{force=false package_id=rand v0.9.2 target="rand"}: cargo::core::compiler::fingerprint: fingerprint error for rand v0.9.2/Check { test: false }/TargetInner { ..: lib_target("rand", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rand-0.9.2\\src\\lib.rs", Edition2021) }
+   0.138381700s  INFO prepare_target{force=false package_id=rand v0.9.2 target="rand"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\rand-fbe3106b8807099c\lib-rand`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.138999000s  INFO prepare_target{force=false package_id=rand_chacha v0.9.0 target="rand_chacha"}: cargo::core::compiler::fingerprint: fingerprint error for rand_chacha v0.9.0/Check { test: false }/TargetInner { ..: lib_target("rand_chacha", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rand_chacha-0.9.0\\src\\lib.rs", Edition2021) }
+   0.139032900s  INFO prepare_target{force=false package_id=rand_chacha v0.9.0 target="rand_chacha"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\rand_chacha-496bda8844fcfef5\lib-rand_chacha`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.139711400s  INFO prepare_target{force=false package_id=ppv-lite86 v0.2.21 target="ppv_lite86"}: cargo::core::compiler::fingerprint: fingerprint error for ppv-lite86 v0.2.21/Check { test: false }/TargetInner { ..: lib_target("ppv_lite86", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\ppv-lite86-0.2.21\\src\\lib.rs", Edition2021) }
+   0.139741700s  INFO prepare_target{force=false package_id=ppv-lite86 v0.2.21 target="ppv_lite86"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\ppv-lite86-2314e790f212f939\lib-ppv_lite86`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_libgit2_prerelease
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: git_midx_writer_dump
+  22: git_filter_source_repo
+  23: git_midx_writer_dump
+  24: BaseThreadInitThunk
+  25: RtlUserThreadStart
+   0.140328600s  INFO prepare_target{force=false package_id=zerocopy v0.8.27 target="zerocopy"}: cargo::core::compiler::fingerprint: fingerprint error for zerocopy v0.8.27/Check { test: false }/TargetInner { ..: lib_target("zerocopy", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\zerocopy-0.8.27\\src\\lib.rs", Edition2021) }
+   0.140365000s  INFO prepare_target{force=false package_id=zerocopy v0.8.27 target="zerocopy"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\zerocopy-487bec2856858ae9\lib-zerocopy`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_filter_source_repo
+  17: git_libgit2_prerelease
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: <unknown>
+  22: git_midx_writer_dump
+  23: git_filter_source_repo
+  24: git_midx_writer_dump
+  25: BaseThreadInitThunk
+  26: RtlUserThreadStart
+   0.141908100s  INFO prepare_target{force=false package_id=rand_core v0.9.3 target="rand_core"}: cargo::core::compiler::fingerprint: fingerprint error for rand_core v0.9.3/Check { test: false }/TargetInner { ..: lib_target("rand_core", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rand_core-0.9.3\\src\\lib.rs", Edition2021) }
+   0.141951400s  INFO prepare_target{force=false package_id=rand_core v0.9.3 target="rand_core"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\rand_core-c38891cd0fa4f291\lib-rand_core`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_libgit2_prerelease
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: git_midx_writer_dump
+  22: git_filter_source_repo
+  23: git_midx_writer_dump
+  24: BaseThreadInitThunk
+  25: RtlUserThreadStart
+   0.142443200s  INFO prepare_target{force=false package_id=getrandom v0.3.3 target="getrandom"}: cargo::core::compiler::fingerprint: fingerprint error for getrandom v0.3.3/Check { test: false }/TargetInner { ..: lib_target("getrandom", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\getrandom-0.3.3\\src\\lib.rs", Edition2021) }
+   0.142466000s  INFO prepare_target{force=false package_id=getrandom v0.3.3 target="getrandom"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\getrandom-428ad5c38464b959\lib-getrandom`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_filter_source_repo
+  17: git_libgit2_prerelease
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: <unknown>
+  22: git_midx_writer_dump
+  23: git_filter_source_repo
+  24: git_midx_writer_dump
+  25: BaseThreadInitThunk
+  26: RtlUserThreadStart
+   0.142788600s  INFO prepare_target{force=false package_id=cfg-if v1.0.3 target="cfg_if"}: cargo::core::compiler::fingerprint: fingerprint error for cfg-if v1.0.3/Check { test: false }/TargetInner { ..: lib_target("cfg_if", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\cfg-if-1.0.3\\src\\lib.rs", Edition2018) }
+   0.142807500s  INFO prepare_target{force=false package_id=cfg-if v1.0.3 target="cfg_if"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\cfg-if-df2f153cb4dda386\lib-cfg_if`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_filter_source_repo
+  16: git_filter_source_repo
+  17: git_filter_source_repo
+  18: git_libgit2_prerelease
+  19: <unknown>
+  20: <unknown>
+  21: <unknown>
+  22: <unknown>
+  23: git_midx_writer_dump
+  24: git_filter_source_repo
+  25: git_midx_writer_dump
+  26: BaseThreadInitThunk
+  27: RtlUserThreadStart
+   0.143864700s  INFO prepare_target{force=false package_id=tracing v0.1.41 target="tracing"}: cargo::core::compiler::fingerprint: fingerprint error for tracing v0.1.41/Check { test: false }/TargetInner { ..: lib_target("tracing", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\tracing-0.1.41\\src\\lib.rs", Edition2018) }
+   0.143893500s  INFO prepare_target{force=false package_id=tracing v0.1.41 target="tracing"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\tracing-839f8fc134e0126e\lib-tracing`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.144731500s  INFO prepare_target{force=false package_id=p3-matrix v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_matrix"}: cargo::core::compiler::fingerprint: fingerprint error for p3-matrix v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_matrix", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\matrix\\src\\lib.rs", Edition2024) }
+   0.144757800s  INFO prepare_target{force=false package_id=p3-matrix v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_matrix"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-matrix-a3d5e72a46b2fa6e\lib-p3_matrix`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.145177400s  INFO prepare_target{force=false package_id=transpose v0.2.3 target="transpose"}: cargo::core::compiler::fingerprint: fingerprint error for transpose v0.2.3/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("transpose", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\transpose-0.2.3\\src\\lib.rs", Edition2015) }
+   0.145197700s  INFO prepare_target{force=false package_id=transpose v0.2.3 target="transpose"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\transpose-3926c57d1431427a\lib-transpose`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.145763800s  INFO prepare_target{force=false package_id=p3-baby-bear v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_baby_bear"}: cargo::core::compiler::fingerprint: fingerprint error for p3-baby-bear v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_baby_bear", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\baby-bear\\src\\lib.rs", Edition2024) }
+   0.145791700s  INFO prepare_target{force=false package_id=p3-baby-bear v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_baby_bear"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-baby-bear-e6aa62f7355a7894\lib-p3_baby_bear`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.146233500s  INFO prepare_target{force=false package_id=p3-mds v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_mds"}: cargo::core::compiler::fingerprint: fingerprint error for p3-mds v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_mds", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\mds\\src\\lib.rs", Edition2024) }
+   0.146255000s  INFO prepare_target{force=false package_id=p3-mds v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_mds"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-mds-d3d8702b381e444e\lib-p3_mds`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.146596300s  INFO prepare_target{force=false package_id=p3-dft v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_dft"}: cargo::core::compiler::fingerprint: fingerprint error for p3-dft v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_dft", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\dft\\src\\lib.rs", Edition2024) }
+   0.146615400s  INFO prepare_target{force=false package_id=p3-dft v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_dft"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-dft-dd2716beaa6d5c7e\lib-p3_dft`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.147001500s  INFO prepare_target{force=false package_id=p3-symmetric v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_symmetric"}: cargo::core::compiler::fingerprint: fingerprint error for p3-symmetric v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_symmetric", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\symmetric\\src\\lib.rs", Edition2024) }
+   0.147024400s  INFO prepare_target{force=false package_id=p3-symmetric v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_symmetric"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-symmetric-57f0b24a3a4c1417\lib-p3_symmetric`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.147714200s  INFO prepare_target{force=false package_id=p3-monty-31 v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_monty_31"}: cargo::core::compiler::fingerprint: fingerprint error for p3-monty-31 v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_monty_31", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\monty-31\\src\\lib.rs", Edition2024) }
+   0.147754000s  INFO prepare_target{force=false package_id=p3-monty-31 v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_monty_31"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-monty-31-708edad4f16a3b93\lib-p3_monty_31`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.148640400s  INFO prepare_target{force=false package_id=p3-poseidon2 v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_poseidon2"}: cargo::core::compiler::fingerprint: fingerprint error for p3-poseidon2 v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_poseidon2", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\poseidon2\\src\\lib.rs", Edition2024) }
+   0.148683200s  INFO prepare_target{force=false package_id=p3-poseidon2 v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_poseidon2"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-poseidon2-8d8dc7929bcfee8a\lib-p3_poseidon2`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.149569400s  INFO prepare_target{force=false package_id=p3-challenger v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_challenger"}: cargo::core::compiler::fingerprint: fingerprint error for p3-challenger v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_challenger", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\challenger\\src\\lib.rs", Edition2024) }
+   0.149604800s  INFO prepare_target{force=false package_id=p3-challenger v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_challenger"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-challenger-9b266ebd848efc84\lib-p3_challenger`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.150121200s  INFO prepare_target{force=false package_id=p3-commit v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_commit"}: cargo::core::compiler::fingerprint: fingerprint error for p3-commit v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_commit", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\commit\\src\\lib.rs", Edition2024) }
+   0.150151700s  INFO prepare_target{force=false package_id=p3-commit v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_commit"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-commit-6f695e4267cf14c0\lib-p3_commit`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.150725400s  INFO prepare_target{force=false package_id=p3-fri v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_fri"}: cargo::core::compiler::fingerprint: fingerprint error for p3-fri v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_fri", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\fri\\src\\lib.rs", Edition2024) }
+   0.150754200s  INFO prepare_target{force=false package_id=p3-fri v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_fri"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-fri-3225d23857dc865e\lib-p3_fri`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.151421100s  INFO prepare_target{force=false package_id=p3-interpolation v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_interpolation"}: cargo::core::compiler::fingerprint: fingerprint error for p3-interpolation v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_interpolation", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\interpolation\\src\\lib.rs", Edition2024) }
+   0.151452900s  INFO prepare_target{force=false package_id=p3-interpolation v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_interpolation"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-interpolation-483f7c8f7395f2b5\lib-p3_interpolation`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.152112900s  INFO prepare_target{force=false package_id=p3-merkle-tree v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_merkle_tree"}: cargo::core::compiler::fingerprint: fingerprint error for p3-merkle-tree v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_merkle_tree", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\merkle-tree\\src\\lib.rs", Edition2024) }
+   0.152145100s  INFO prepare_target{force=false package_id=p3-merkle-tree v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_merkle_tree"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-merkle-tree-4c041562667ca222\lib-p3_merkle_tree`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.152737200s  INFO prepare_target{force=false package_id=p3-uni-stark v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_uni_stark"}: cargo::core::compiler::fingerprint: fingerprint error for p3-uni-stark v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("p3_uni_stark", ["lib"], "C:\\Users\\Ankita Singh\\.cargo\\git\\checkouts\\plonky3-7d8a3b21a665a86f\\e6d473c\\uni-stark\\src\\lib.rs", Edition2024) }
+   0.152768600s  INFO prepare_target{force=false package_id=p3-uni-stark v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca) target="p3_uni_stark"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\p3-uni-stark-8b67ca49e2c322c5\lib-p3_uni_stark`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.153886300s  INFO prepare_target{force=false package_id=simple_arithmetic_proof v0.1.0 (D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation) target="simple_arithmetic_proof"}: cargo::core::compiler::fingerprint: fingerprint error for simple_arithmetic_proof v0.1.0 (D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation)/Check { test: true }/TargetInner { name: "simple_arithmetic_proof", doc: true, ..: with_path("D:\\projects\\plonky3-simple-circuit-implementation\\plonky3-simple-circuit-implementation\\src\\main.rs", Edition2021) }
+   0.153937900s  INFO prepare_target{force=false package_id=simple_arithmetic_proof v0.1.0 (D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation) target="simple_arithmetic_proof"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation\target\debug\.fingerprint\simple_arithmetic_proof-48e667af29baa962\test-bin-simple_arithmetic_proof`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking cfg-if v1.0.3
+    Checking zerocopy v0.8.27
+    Checking serde_core v1.0.226
+    Checking num-integer v0.1.46
+    Checking itertools v0.14.0
+    Checking tracing v0.1.41
+    Checking getrandom v0.3.3
+    Checking num-bigint v0.4.6
+    Checking transpose v0.2.3
+    Checking rand_core v0.9.3
+    Checking ppv-lite86 v0.2.21
+    Checking serde v1.0.226
+    Checking rand_chacha v0.9.0
+    Checking rand v0.9.2
+    Checking p3-util v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-field v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-matrix v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-symmetric v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-challenger v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-dft v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-air v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-interpolation v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-commit v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-mds v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-poseidon2 v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-uni-stark v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-fri v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-merkle-tree v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-monty-31 v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking p3-baby-bear v0.3.0 (https://github.com/Plonky3/Plonky3#e6d473ca)
+    Checking simple_arithmetic_proof v0.1.0 (D:\projects\plonky3-simple-circuit-implementation\plonky3-simple-circuit-implementation)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 15.65s
