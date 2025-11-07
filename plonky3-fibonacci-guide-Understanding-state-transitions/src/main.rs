@@ -114,3 +114,74 @@ pub fn generate_fibonacci_trace<F: PrimeField64>(num_steps: usize) -> RowMajorMa
 
     trace
 }
+
+// Type definitions following Plonky3 patterns
+type Val = BabyBear;
+type Perm = Poseidon2BabyBear<16>;
+type MyHash = PaddingFreeSponge<Perm, 16, 8, 8>;
+type MyCompress = TruncatedPermutation<Perm, 2, 8, 16>;
+type ValMmcs = MerkleTreeMmcs<
+    <Val as Field>::Packing,
+    <Val as Field>::Packing,
+    MyHash,
+    MyCompress,
+    8
+>;
+type Challenge = BinomialExtensionField<Val, 4>;
+type ChallengeMmcs = ExtensionMmcs<Val, Challenge, ValMmcs>;
+type Challenger = DuplexChallenger<Val, Perm, 16, 8>;
+type Dft = Radix2DitParallel<Val>;
+type Pcs = TwoAdicFriPcs<Val, Dft, ValMmcs, ChallengeMmcs>;
+type MyConfig = StarkConfig<Pcs, Challenge, Challenger>;
+
+// Simple RNG for deterministic setup
+struct SimpleRng {
+    state: u64,
+}
+
+impl SimpleRng {
+    fn new(seed: u64) -> Self {
+        Self { state: seed }
+    }
+}
+
+impl rand::RngCore for SimpleRng {
+    fn next_u32(&mut self) -> u32 {
+        self.state = self.state.wrapping_mul(1103515245).wrapping_add(12345);
+        (self.state >> 32) as u32
+    }
+
+    fn next_u64(&mut self) -> u64 {
+        let high = self.next_u32() as u64;
+        let low = self.next_u32() as u64;
+        (high << 32) | low
+    }
+
+    fn fill_bytes(&mut self, dest: &mut [u8]) {
+        for chunk in dest.chunks_mut(4) {
+            let val = self.next_u32().to_le_bytes();
+            for (i, &byte) in val.iter().enumerate() {
+                if i < chunk.len() {
+                    chunk[i] = byte;
+                }
+            }
+        }
+    }
+}
+
+impl rand::CryptoRng for SimpleRng {}
+
+fn create_config() -> MyConfig {
+    let mut rng = SimpleRng::new(42);
+    let perm = Perm::new_from_rng_128(&mut rng);
+    let hash = MyHash::new(perm.clone());
+    let compress = MyCompress::new(perm.clone());
+    let val_mmcs = ValMmcs::new(hash, compress);
+    let challenge_mmcs = ChallengeMmcs::new(val_mmcs.clone());
+    let dft = Dft::default();
+    let fri_params = create_test_fri_params(challenge_mmcs, 4);
+    let pcs = Pcs::new(dft, val_mmcs, fri_params);
+    let challenger = Challenger::new(perm);
+    MyConfig::new(pcs, challenger)
+}
+
