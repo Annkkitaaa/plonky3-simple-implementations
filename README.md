@@ -2,9 +2,6 @@
 
 A collection of practical, working examples to learn [Plonky3](https://github.com/Plonky3/Plonky3) - Polygon's next-generation STARK-based zero-knowledge proof toolkit.
 
-[![Rust](https://img.shields.io/badge/rust-1.70%2B-orange.svg)](https://www.rust-lang.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
 ##  What This Repository Contains
 
 This repository provides hands-on examples that demonstrate how to build STARK proof systems using Plonky3, progressing from basic concepts to more advanced patterns.
