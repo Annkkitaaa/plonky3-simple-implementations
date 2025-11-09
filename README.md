@@ -11,7 +11,7 @@ This repository provides hands-on examples that demonstrate how to build STARK p
 | Example | Difficulty | Concepts Covered |
 |---------|-----------|------------------|
 | [Simple Arithmetic Circuit](#-example-1-simple-arithmetic-circuit) | Beginner | Single-row constraints, basic AIR, trace generation |
-| [Fibonacci Sequence](#-example-2-fibonacci-sequence) | Intermediate | Multi-row constraints, state transitions, sequential computation |
+| [Fibonacci Sequence](#-example-2-fibonacci-sequence) | Intermediate | Multi-row constraints, state transitions
 
 ---
 
