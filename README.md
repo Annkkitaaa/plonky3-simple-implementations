@@ -347,7 +347,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 - **Discussions**: [GitHub Discussions](https://github.com/yourusername/plonky3-examples/discussions)
-- **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
+- **Twitter**: [@e](https://twitter.com/annkkitaaa)}
 
 ---
 
